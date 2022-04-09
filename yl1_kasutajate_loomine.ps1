@@ -20,7 +20,7 @@ foreach ($user in $users){
         -Department $user.Department `
         -UserPrincipalName $upname `
         -AccountPassword (ConvertTo-SecureString $user.Password -AsPlainText -force) -Enabled $true
-         echo "New user $Username added succesfully."
+         echo "New user $Username added successfully."
         }    
 }
 function Translit {
